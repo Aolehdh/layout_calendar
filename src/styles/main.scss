@@ -1,8 +1,3 @@
-$day-size: 100px;
-$day-count: 7;
-$bg-color-days: #eee;
-$bg-color-days-hover: #ffbfcb;
-
 .calendar {
   display: flex;
   flex-wrap: wrap;
@@ -38,15 +33,6 @@ $bg-color-days-hover: #ffbfcb;
     }
   }
 
-  $start-days: (
-    mon: 0,
-    tue: 1,
-    wed: 2,
-    thu: 3,
-    fri: 4,
-    sat: 5,
-    sun: 6,
-  );
 
   @each $day, $meaning in $start-days {
     &--start-day-#{$day} &__day:first-child {
